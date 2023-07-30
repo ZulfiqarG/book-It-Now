@@ -1,38 +1,293 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.element{
+  font-family: sans-serif;
+   border:1px solid #3a47d5;
+    display:inline-block;
+     margin:4px;
+     border-radius:5px;
+     padding:5px
   }
+
+  .element:hover{
+     cursor: pointer;
+     border:1px solid #e3ffe7;
+     box-shadow:5px 5px 10px rgb(58, 71, 213)
+  }
+  .container{
+   border: 2px solid #e3ffe7;
+   width:40vw;
+   border-radius: 10px;
+   padding:10px;
+   margin: 5px 5px;
+background-color: #eee;
+box-shadow: 3px 3px 10px rgb(58, 71, 213);
+
+  }
+
+  .container>h2{
+font-family: sans-serif;
+
+  }
+
+  .containerOuter{
+     display: inline-block;
+  }
+  .containerBooking{
+   width: 40vw;
+   border: 2px solid #e3ffe7;
+   border-radius: 10px;
+   margin: 5px 5px;
+   padding: 10px;
+  background-color: #eee;
+  font-family: sans-serif;
+  box-shadow: 5px 5px 10px rgb(58, 71, 213);
+  }
+
+  .AppContainer{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 10px;
+   
+   
+
+  }
+  .mainContainer{
+     border: 10px solid #acb6e5;
+     margin: 10px;
+     padding: 10px;
+     background-image: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    border-radius: 25px;
+  }
+   
+  .submit-btn {
+   background:rgb(0, 210, 255);
+ color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+ border: 1px solid #e3ffe7;
+ border-radius: 5px;
+ box-shadow: 4px 4px 10px rgb(0, 210, 255);
+  border: 1px solid #e3ffe7;
+ text-shadow: none;
+   padding: 15px;
+   width:30%;
+   height:100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.submit-btn:hover {
+  cursor: pointer;
+ background: #3a47d5; 
+ color: white;
+ border: 1px solid rgb(0, 0, 0);
+ border-radius: 15px;
+ box-shadow: 5px 5px 10px rgb(58, 71, 213);
+ text-shadow: none;
+  
+}
+
+.delete-btn {
+  background:rgb(240, 84, 78);
+color: rgb(0, 0, 0);
+ font-size: 15px;
+ font-weight: bold;
+ font-family: sans-serif;
+border: 1px solid #e3ffe7;
+border-radius: 5px;
+box-shadow: 4px 4px 10px rgb(240, 84, 78);
+ border: 1px solid #e3ffe7;
+text-shadow: none;
+  padding: 15px;
+  width:30%;
+  height:100%;
+}
+
+.delete-btn:hover {
+ cursor: pointer;
+background: #c20902; 
+color: white;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 15px;
+box-shadow: 5px 5px 10px rgb(194, 9, 2);
+text-shadow: none;
+ 
+}
+
+
+.noBooking{
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 40vw;
+  height: 40vh;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+   width:40vw;
+  border-radius: 10px;
+  padding:10px;
+  margin: 5px 0;
+}
+.btn2{
+  display: flex;
+  justify-content: center;
+  width:40vw;
+  border-radius: 10px;
+  padding:10px;
+  margin: 5px 0;
+}
+
+
+@media screen and (max-width: 900px) {
+.mainContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+  .container{
+     width: 80vw;
+  }
+  .containerBooking{
+     width: 80vw;
+  }
+  .btn{
+     width: 80vw;
+  }
+  .btn2{
+     width:80vw;
+  }
+  .noBooking{
+     width:80vw;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ----------------card image selection---------------------- */
+.containerSize{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 165px));
+  grid-auto-rows: 100px;
+  grid-auto-flow: row dense;
+  grid-gap: 23px;
+  border: 2px solid #e3ffe7;
+   width:40vw;
+   border-radius: 10px;
+   padding:10px;
+   margin: 5px 5px;
+background-color: #eee;
+box-shadow: 3px 3px 10px rgb(58, 71, 213);
+justify-content: center;
+/* ------this is background color START------ */
+background: 
+        radial-gradient(ellipse at center, rgba(0,0,255,0.3) 0%, rgba(0,0,0,0) 70%), /* niebieski */
+        radial-gradient(ellipse at center, rgba(255,0,0,0.3) 0%, rgba(0,0,0,0) 70%), /*czerwony */
+        radial-gradient(ellipse at center, rgba(0,255,0,0.3) 0%, rgba(0,0,0,0) 70%) /*zielony */
+        #c3d7db;
+    background-repeat: 
+        no-repeat, 
+        no-repeat, 
+        no-repeat;
+    background-size: 
+        900px 900px,
+        900px 900px,
+        900px 900px;
+    background-attachment: fixed;
+    
+    animation:bganimation 25s infinite;
 }
+
+
+@keyframes bganimation
+{
+0%   {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+      50% {
+           background-position: 
+               150% 100%,
+               -200% 100%,
+               100% 0%,
+               0% 100%;
+      }
+      100% {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+}
+/* ------this is background color END------ */
+
+.card-top {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  border-radius: 20.2380952381px;
+  box-shadow: 0px 3px 9px 1px rgba(0, 10, 20, 0.2);
+}
+
+.card-top {
+  flex-direction: column;
+  grid-column: auto/span 1;
+  grid-row: auto/span 2;
+}
+
+
+.card-top:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(58, 71, 213);
+}
+
+.card-image {
+  display: flex;
+}
+
+.card-top .card-image {
+  height: 100%;
+  width: 100%;
+}
+
+
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-top img {
+  border-radius: 20.2380952381px 20.2380952381px 0 0;
+}
+
+.card-text {
+  align-self: center;
+  padding: 23px;
+}
+
+.card-top .card-text {
+  height: auto;
+  width: auto;
+  padding-bottom: 36.8px;
+}
+
+.card-text p {
+  margin: 0;
+  line-height: 1.35em;
+  color: #334455;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+@media (max-width: 900px) {
+  .containerSize{
+    width: 80vw;
+ }
+} 
+
+/* Animation background */
