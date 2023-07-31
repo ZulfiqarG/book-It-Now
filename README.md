@@ -36,6 +36,6 @@ Run "npm install" in the terminal to install all the packages needed for this pr
 
 ## Developed-By
 
-1. Shaikh Zulfiqar [Profile](https://github.com/ZulfiqarG).
+1. Shaikh Zulfiqar [channel](https://www.youtube.com/@knowledgeislight2214/videos).
 
 Copyright (c) 2023-2024 (Knowledge is Light) / AlmaBetter
