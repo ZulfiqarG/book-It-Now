@@ -34,8 +34,12 @@ Run "npm install" in the terminal to install all the packages needed for this pr
 
 ## 📸 Screenshot of the application
 
-## Developed-By
+## Developed-By (Shaikh Zulfiqar)
 
-1. Shaikh Zulfiqar [channel](https://www.youtube.com/@knowledgeislight2214/videos).
+1. [Youtube](https://www.youtube.com/@knowledgeislight2214/videos).
+1. [Linkedin](https://www.linkedin.com/in/zulfiqar-shaikh-6a6893202).
+1. [Twitter](https://twitter.com/ZulfiqarSk66).
+1. [Instagram](https://www.instagram.com/zulfiqarshaikhofficial66/).
+1. [Pinterest](https://in.pinterest.com/zulfiqarshaikhofficial/).
 
-Copyright (c) 2023-2024 (Knowledge is Light) / AlmaBetter
+Copyright (c) 2023-2024 (Knowledge is Light) / AlmaBetter All Right Reserved.
